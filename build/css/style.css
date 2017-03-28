@@ -650,7 +650,8 @@ template {
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.3);
   position: relative;
-  display: inline-block; }
+  display: inline-block;
+  transition: all 0.2s; }
   .slider__item .slider__image {
     position: absolute;
     bottom: 0;
