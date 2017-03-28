@@ -1,0 +1,45 @@
+.slider__item {
+  width: $width;
+  height: $width;
+  border-radius: $radius;
+  border: 2px solid $border-color;
+  position: relative;
+  display: inline-block;
+
+  .slider__image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 168px;
+    transition: height 0.2s;
+    transition-timing-function: cubic-bezier(.49,.35,.13,1.91);
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    .slider__image {
+      height: 178px;
+    }
+  }
+
+  &--without {
+    border: 4px solid $white-color;
+
+    .slider__image {
+      width: 61px;
+      height: 153px;
+    }
+
+    &:hover {
+      .slider__image {
+        height: 163px;
+      }
+    }
+  }
+}

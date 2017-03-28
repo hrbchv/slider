@@ -1,0 +1,13 @@
+
+
+.slick-slide {
+  animation-name: deActiveSlide;
+  animation-duration: 0.7s;
+  animation-fill-mode: forwards;
+
+  &.slick-active {
+    animation-name: activeSlide;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+  }
+}

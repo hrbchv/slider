@@ -6,7 +6,6 @@
   background-image: $pattern-page;
   margin: 0;
   padding: 0;
-  padding: 0 5vw;
 }
 
 * {
@@ -17,4 +16,11 @@
   width: 100%;
   padding: 33vh 100px;
   position: relative;
+}
+
+.overlay {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 0 5vw;
 }

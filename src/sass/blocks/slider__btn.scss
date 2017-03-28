@@ -1,0 +1,84 @@
+.next,
+.prev {
+  perspective: 170px;
+  position: absolute;
+  top: 50%;
+  margin: auto;
+  width: 170px;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.btn {
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  color: $white-color;
+  font-size: $btn-font;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid $white-color;
+  height: 60px;
+  font-weight: bold;
+  font-family: $font-name;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:before {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 15px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 1px;
+    bottom: 0;
+    margin: auto;
+    transition: all 0.3s;
+  }
+
+  &.btn-prev {
+    transform: rotateX(-2deg) rotateY(9deg);
+
+    &:before {
+      background-image: url('../img/icon/arrow-prev.png');
+      left: 40px;
+    }
+    &:hover {
+      &:before {
+        background-image: url('../img/icon/arrow-prev--hover.png');
+      }
+    }
+  }
+
+  &.btn-next {
+    transform: rotateX(-2deg) rotateY(-9deg);
+
+    &:before {
+      background-image: url('../img/icon/arrow-next.png');
+      right: 40px;
+    }
+    &:hover {
+      &:before {
+        background-image: url('../img/icon/arrow-next--hover.png');
+      }
+    }
+  }
+
+  &:hover {
+    background-color: $white-color;
+    color: $color-page;
+  }
+}
