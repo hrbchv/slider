@@ -627,7 +627,9 @@ template {
     justify-content: center;
     -ms-flex-align: end;
     align-items: flex-end;
-    visibility: hidden; }
+    visibility: hidden;
+    position: relative;
+    z-index: 1; }
   .slider .slick-slide {
     margin: 0px 20px; }
   .slider .slick-list {
