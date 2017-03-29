@@ -6,8 +6,7 @@
   animation-fill-mode: forwards;
 
   &.slick-active {
+    visibility: visible;
     animation-name: activeSlide;
-    animation-duration: 0.7s;
-    animation-fill-mode: forwards;
   }
 }
