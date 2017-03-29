@@ -7,6 +7,7 @@
 
   &.slick-active {
     visibility: visible;
+    z-index: 2;
     animation-name: activeSlide;
   }
 }

@@ -736,4 +736,5 @@ template {
   animation-fill-mode: forwards; }
   .slick-slide.slick-active {
     visibility: visible;
+    z-index: 2;
     animation-name: activeSlide; }
